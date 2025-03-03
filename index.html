@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>me website</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -19,52 +19,131 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/skeleton.css"> 
+  <link rel="stylesheet" href="css/modern-normalize.css">
+  <link rel="stylesheet" href="css/custom.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
 
 </head>
 
 <body>
+  <!-- <script>
+    const options = {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+    
+    /* window.onload = function() {
+      document.getElementById('timeanddate').textContent = now;
+    } */
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    function showTime() {
+      const dateNow = new Date().toLocaleDateString(options);
+      const timeNow = new Date().toLocaleTimeString(options);
+      document.getElementById('time').textContent = timeNow;
+      document.getElementById('date').textContent = dateNow;
+    }
+
+    setInterval(showTime, 1000);
+  </script> -->
+
+  <!-- Page Header Section -->
   <div class="container">
-    <div class="row">
-      <div class="one-half column">
-        <h4>Son Nguyen</h4>
-        <p>This is my food page.</p>
+    <section class="header">
+      <h2 class="title">Welcome to my page!</h2>
+      <p>Both this webpage and I are a work in progress.</p>
+      <p>These are what I care about:</p>
+
+      <div class="value-props row">
+        <div class="three columns value-prop">
+          <img class="value-img" src="icons/books.svg">
+          Reading
+        </div>
+        <div class="three columns value-prop">
+          <img class="value-img" src="icons/cooking.svg">
+          Food & Cooking
+        </div>
+        <div class="three columns value-prop">
+          <img class="value-img" src="icons/gym.svg">
+          Health and Fitness
+        </div>
+        <div class="three columns value-prop">
+          <img class="value-img" src="icons/humans.svg">
+          Community
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" style="margin-left: 35px" href="#home">Son Nguyen</a></li>
+        </ul>
+        <ul class="navbar-list u-pull-right">
+          <li class="navbar-item"><a class="navbar-link" href="#contact">Email: nnnson96@gmail.com</a></li>
+          <!-- <li class="navbar-item"><span class="navbar-link" id="date"></span></li> -->
+          <!-- <li class="navbar-item"><span class="navbar-link" id="time"></span></li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Text Content -->
+
+    <div class="docs-section">
+      <h6 class="docs-header">A dish is more than the sum of its parts.</h6>
+      <p>In the last decade while Korean culture and food reaches new heights, you can see how gochujang is used in modern cooking to give any dish a Korean flair, even if that's the only thing remotely Korean or Asian about it. But let's say that the red chili peppers went extinct and gochujang could no longer be made, Korean people would quickly find an alternative pepper paste and life would go on. The flavors of bulgogi comes from balancing gochujang, soy sauce, sugar, and sesame oil. Many different Japanese dishes are born out of the careful balancing of sake, soy sauce, and mirin. But not one of them alone, gives Japanese cuisine its character. That is to say that when it comes to food, a dish is more than the sum of its parts.</p>
+    </div>
+
+    <!-- Food Gallery Section -->
+    <div class="videogallery">
+      <div class="row">
+        <div class="six columns">
+          <div class="u-max-full-width" style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1062167922?h=c24d52760c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Final Wonton Spicy Peanut"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+
+        <div class="six columns">
+          <div class="u-max-full-width" style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1062177431?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="teriyaki wings final(1)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="column">
-      <img src="images/gochujang_pasta.jpeg">
-      <img src="images/bossam.jpeg">
-      <img src="images/kimchi_fried_rice.jpeg">
-      <img src="images/black_bean_noodles.jpeg">
-      <img src="images/tteokbokki.jpeg">
+    <div class="foodwall">
+      <div class="row">
+        <div class="four columns">
+          <img class="u-full-width" src="images/gochujang_pasta.jpeg">
+        </div>
+
+        <div class="four columns">
+          <img class="u-max-full-width" src="images/japanese_curry.jpeg">
+        </div>
+
+        <div class="four columns">
+          <img class="u-max-full-width" src="images/kimchi_fried_rice.jpeg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="four columns">
+          <img class="u-max-full-width" src="images/chanterelle_potato_soup.jpeg">
+        </div>
+
+        <div class="four columns">
+          <img class="u-max-full-width" src="images/kobocha_soup.jpeg">
+        </div>
+
+        <div class="four columns">
+          <img class="u-max-full-width" src="images/curry_udon.jpeg">
+        </div>
+      </div>
     </div>
 
-    <div class="column">
-      <img src="images/japanese_curry.jpeg">
-      <img src="images/kobocha_soup.jpeg">
-      <img src="images/crispy_teriyaki_chicken.jpeg">
-      <img src="images/gyudon.jpeg">
-      <img src="images/steak.jpeg">
-    </div>
-
-    <div class="column">
-      <img src="images/curry_udon.jpeg">
-      <img src="images/miso_salmon.jpeg">
-      <img src="images/ramen.jpeg">
-      <img src="images/chanterelle_potato_soup.jpeg">
-    </div>
-  </div>
+</div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
