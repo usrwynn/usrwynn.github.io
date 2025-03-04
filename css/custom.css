@@ -45,12 +45,17 @@ a:hover {
 .docs-section {
     background: #097969;
     padding: 4rem 4rem;
+    border: 0.1rem dashed;
     margin-bottom: 0;
 }
 
 body {
     background-color: #097969;
     color: #eee;
+}
+
+.avatar {
+    border-radius: 50%;
 }
 
 /* Larger than phablet (size when grid kicks in) */
