@@ -75,7 +75,7 @@ body {
 }
 
 /* Larger than phablet (size when grid kicks in) */
-@media (min-width: 550px) {
+@media (min-width: 400px) {
     /* Navbar */
     /* .navbar + .docs-section {
       border-top-width: 0; } */
